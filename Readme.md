@@ -6,6 +6,30 @@ This repository contains all code used for my MSc dissertation project, which ex
 
 To evaluate whether advanced TSC models like MultiRocket and HYDRA can outperform traditional ML models in predicting short-term stock price movements, using directional classification (up/down) and backtested via a Donchian breakout trading strategy.
 
+Reproducing Results
+Set up environment
 
+Using conda:
+```
+conda env create -f environment.yml
+conda activate stock-predict
+```
 
+If you prefer pip:
+```
+pip install -r requirements.txt
+```
+Run the notebooks
+
+Start with fetch-yf-data.ipynb to download the data, then follow the modeling notebooks (e.g., MR-HYDRA-FULL.ipynb).
+
+Models Compared
+- MultiRocket + HYDRA
+- Logistic Regression
+- Support Vector Machine
+- XGBoost
+
+Random Forest
+
+# Citation
 This project was submitted as part of the MSc Data Science dissertation at the University of Manchester. Please cite appropriately or contact the author before reuse.
